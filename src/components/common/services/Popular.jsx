@@ -3,21 +3,25 @@ import { BookOpen, PenTool, Globe, Code } from "lucide-react";
 export default function PopularSevs() {
    const services = [
       {
+         id: 1,
          icon: <BookOpen className="h-10 w-10 text-main-800" />,
          title: "كتابة الابحاث العلمية",
          description: "خدمة متميزة لكتابة الأبحاث العلمية بجودة عالية"
       },
       {
+         id: 2,
          icon: <PenTool className="h-10 w-10 text-green-600" />,
          title: "تنسيق الرسائل العلمية",
          description: "تنسيق احترافي للرسائل العلمية وفق المعايير الأكاديمية"
       },
-      {
+      {  
+         id: 3,
          icon: <Globe className="h-10 w-10 text-blue-600" />,
          title: "ترجمة الابحاث العلمية",
          description: "ترجمة دقيقة للأبحاث العلمية بمختلف اللغات"
       },
       {
+         id: 4,
          icon: <Code className="h-10 w-10 text-red-600" />,
          title: "مشاريع برمجية",
          description: "تطوير مشاريع برمجية متكاملة لمختلف التخصصات"
