@@ -11,6 +11,7 @@
    -moz-transition: .4s;
    -ms-transition: .4s;
    -o-transition: .4s;
+   user-select: none;
 }
 html,
 body {

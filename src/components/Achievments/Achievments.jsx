@@ -19,8 +19,7 @@ export default function Achievments() {
       }
    ]
    return (
-      <div>
-         <div className="bg-gradient-to-r from-purple-100 to-main-100 h-100 mb-12 p-12 rounded-lg">
+         <div className="bg-gradient-to-r from-purple-100 to-main-100 h-100 p-12 rounded-lg">
             <div className="grid md:grid-cols-3 grid-cols-1 justify-center gap-12">
                {states.map((el, index) => {
                   return (
@@ -33,6 +32,5 @@ export default function Achievments() {
                })}
             </div>
          </div>
-      </div>
    )
 }

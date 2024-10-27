@@ -1,4 +1,5 @@
 import Achievments from '../Achievments/Achievments'
+import ContactBanner from '../common/contact/ContactBanner'
 import aboutUsImgs from '/images/aboutus.jpg'
 export default function AboutUs() {
    return (
@@ -26,6 +27,8 @@ export default function AboutUs() {
          <div className='py-12'>
             <Achievments />
          </div>
+         <ContactBanner />
+
       </>
    )
 }

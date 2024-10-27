@@ -25,12 +25,16 @@ export default function Hero() {
             <h2 className="heading-title"> خدماتنا الأكثر طلب</h2>
             <PopularServs numsOfServs={3} />
          </>
-         <WhyUs />
-         <>
+         <div className='py-12'>
+            <WhyUs />
+         </div>
+         <div className='py-12'>
             <h2 className="heading-title">إنجازاتنا</h2>
             <Achievments />
-         </>
-         <FAQ />
+         </div>
+         <div className='py-12'>
+            <FAQ />
+         </div>
       </main>
    )
 }
