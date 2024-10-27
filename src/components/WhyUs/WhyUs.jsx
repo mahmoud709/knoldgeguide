@@ -40,7 +40,7 @@ export default function WhyUs() {
                   <div key={index} className="bg-white p-6 rounded-md border hover:bg-gray-50">
                      <div className="flex gap-3 items-center mb-4">
                         <span className="text-main-600 text-3xl">{feature.icon}</span>
-                        <h3 className="ml-4 md:text-2xl font-bold text-main-700">{feature.title}</h3>
+                        <h3 className="ml-4 md:text-2xl text-xl font-bold text-main-700">{feature.title}</h3>
                      </div>
                      <p className="text-gray-600 text-lg">
                         {feature.description}
