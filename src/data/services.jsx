@@ -1,4 +1,4 @@
-import { BookOpen, PenTool, Globe, Code, Brush, Camera, Film, Edit, FileText, Monitor, Shield, Edit3 } from "lucide-react";
+import { BookOpen, PenTool, Globe, Brush, Camera, Film, Edit, FileText, Monitor, Shield, Edit3 } from "lucide-react";
 
 export const Services = [
    {

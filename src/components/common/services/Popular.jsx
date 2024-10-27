@@ -8,17 +8,16 @@ export default function PopularServs({ numsOfServs, category }) {
       <>
          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-start gap-8 pb-4">
             {
-               category === "allServices"
-                  ? servs.map((service, index) => (
+               category === "allServices" || ""
+                  ? servs.slice(0, numsOfServs).map((service, index) => (
                      <ServCard service={service} key={index} />
                   ))
                   : servs
                      .filter((el) => el.category === category)
-                     .map((service, index) => (
+                     .slice(0, numsOfServs).map((service, index) => (
                         <ServCard service={service} key={index} />
                      ))
             }
-
          </div>
          {numsOfServs <= 4 && <div className="flex justify-center items-center pt-8">
             <Link to='services'>

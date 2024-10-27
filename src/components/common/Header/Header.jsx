@@ -8,10 +8,10 @@ export default function Header() {
     settoggle(!toggle);
   }
   return (
-    <header className="bg-gray-50 flex justify-between items-center p-3 shadow-sm fixed top-0 left-0 right-0 h-[100px] z-50">
+    <header className="bg-gray-50 flex justify-between items-center p-3 shadow-sm fixed top-0 left-0 right-0 h-[70px] z-50">
       <div className="logo">
       </div>
-      <ul className={`md:flex gap-5 items-center hidden ${toggle && '!flex flex-col gap-y-4 absolute top-[100px] left-0 right-0 w-full bg-gray-50 py-6'} `}>
+      <ul className={`md:flex gap-5 items-center hidden ${toggle && '!flex flex-col gap-y-4 absolute top-[70px] left-0 right-0 w-full bg-gray-50 py-6'} `}>
         <li className="text-xl font-medium" >
           <NavLink to='/'>الرئيسية</NavLink>
         </li>

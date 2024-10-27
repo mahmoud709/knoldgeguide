@@ -18,12 +18,12 @@ export default function Services() {
    }, [])
    return (
       <>
-         <div className="flex gap-4 mb-6">
+         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mb-6 md:w-2/3">
             {categories.map((cat, index) => (
                <button
                   key={index}
                   onClick={() => hanldeSelectCategory(cat)}
-                  className={`px-4 py-2 rounded ${selectedCategory === cat.value ? "bg-main-600 text-white" : "bg-gray-200 text-black"}`}
+                  className={`py-2 rounded ${selectedCategory === cat.value ? "bg-main-600 text-white" : "bg-gray-200 text-black"}`}
                >
                   {cat.name}
                </button>

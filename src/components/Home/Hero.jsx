@@ -23,7 +23,7 @@ export default function Hero() {
          </div>
          <>
             <h2 className="heading-title"> خدماتنا الأكثر طلب</h2>
-            <PopularServs numsOfServs={3} />
+            <PopularServs category="allServices" numsOfServs={3} />
          </>
          <div className='py-12'>
             <WhyUs />
