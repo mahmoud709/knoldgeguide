@@ -20,9 +20,14 @@ export default function SingleService() {
                <article className="md:text-xl text-lg text-gray-700 py-3">
                   {singleServ.info}
                </article>
-               <Link to='https://wa.me/+' terget="_blank">
-                  <button className="main-btn">طلب الخدمه</button>
-               </Link>
+               <div className="flex gap-x-2 items-center">
+                  <Link to='https://wa.me/+' terget="_blank">
+                     <button className="main-btn">طلب الخدمه</button>
+                  </Link>
+                  {/* <Link to='https://wa.me/+' terget="_blank">
+                     <button className="main-btn">طلب الخدمه تلجرام</button>
+                  </Link> */}
+               </div>
             </div>
             <div className="serv-img">
                <img src={singleServ.image} className="rounded" alt={singleServ.title} loading="lazy" />
