@@ -34,5 +34,7 @@ export default [
         { allowConstantExport: true },
       ],
     },
+    "no-unsafe-optional-chaining": "off",
+
   },
 ]

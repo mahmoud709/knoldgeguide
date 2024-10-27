@@ -1,9 +1,12 @@
-import PopularSevs from '../common/services/Popular';
+import Achievments from '../Achievments/Achievments';
+import PopularServs from '../common/services/Popular';
+import FAQ from '../faq/FAQ';
 import heroImg from '/images/hero.png';
+import WhyUs from './../WhyUs/WhyUs';
 export default function Hero() {
    return (
-      <div>
-         <div className="hero-info min-h-screen flex items-center justify-center">
+      <main>
+         <div className="hero-info min-h-screen flex items-start justify-center mt-10">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
                <div className="text">
                   <h1 className='md:text-3xl text-xl font-bold pb-2 text-main-600'>
@@ -18,7 +21,16 @@ export default function Hero() {
                </div>
             </div>
          </div>
-         <PopularSevs />
-      </div>
+         <>
+            <h2 className="heading-title"> خدماتنا الأكثر طلب</h2>
+            <PopularServs numsOfServs={3} />
+         </>
+         <WhyUs />
+         <>
+            <h2 className="heading-title">إنجازاتنا</h2>
+            <Achievments />
+         </>
+         <FAQ />
+      </main>
    )
 }

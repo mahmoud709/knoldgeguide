@@ -1,51 +1,21 @@
-import { BookOpen, PenTool, Globe, Code } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Services } from "../../../data/services.jsx";
+import ServCard from "./ServCard.jsx";
 
-export default function PopularSevs() {
-   const services = [
-      {
-         id: 1,
-         icon: <BookOpen className="h-10 w-10 text-main-800" />,
-         title: "كتابة الابحاث العلمية",
-         description: "خدمة متميزة لكتابة الأبحاث العلمية بجودة عالية"
-      },
-      {
-         id: 2,
-         icon: <PenTool className="h-10 w-10 text-green-600" />,
-         title: "تنسيق الرسائل العلمية",
-         description: "تنسيق احترافي للرسائل العلمية وفق المعايير الأكاديمية"
-      },
-      {  
-         id: 3,
-         icon: <Globe className="h-10 w-10 text-blue-600" />,
-         title: "ترجمة الابحاث العلمية",
-         description: "ترجمة دقيقة للأبحاث العلمية بمختلف اللغات"
-      },
-      {
-         id: 4,
-         icon: <Code className="h-10 w-10 text-red-600" />,
-         title: "مشاريع برمجية",
-         description: "تطوير مشاريع برمجية متكاملة لمختلف التخصصات"
-      },
-   ];
-
+export default function PopularServs({ numsOfServs }) {
+   const servs = Services;
    return (
-      <div className="bg-gradient-to-r from-purple-100 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
-         <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-800 text-center mb-12">
-               خدماتنا الأكثر شعبية
-            </h2>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-               {services.map((service, index) => (
-                  <div key={index} className="bg-white rounded-lg border shadow-sm">
-                     <div className="p-6 flex flex-col items-center justify-center">
-                        <i className="pb-4">{service.icon}</i>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-main-700">{service.title}</h3>
-                        <p className="text-gray-600 text-lg text-center">{service.description}</p>
-                     </div>
-                  </div>
-               ))}
-            </div>
+      <>
+         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-start gap-8 pb-4">
+            {servs.slice(0, numsOfServs).map((service, index) => (
+               <ServCard service={service} key={index} />
+            ))}
          </div>
-      </div>
+         {numsOfServs <= 4 && <div className="flex justify-center items-center pt-8">
+            <Link to='services'>
+               <button className="main-btn"> المزيد من الخدمات</button>
+            </Link>
+         </div>}
+      </>
    );
 }
