@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Categories from "../../categories/categories";
-import PopularServs from "./Popular";
+import Categories from "../../categories/Categories.jsx";
+import PopularServs from "./Popular.jsxgit";
 
 export default function Services() {
    useEffect(() => {
