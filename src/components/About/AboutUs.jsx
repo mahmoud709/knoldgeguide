@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import Achievments from '../Achievments/Achievments'
 import ContactBanner from '../common/contact/ContactBanner'
 import aboutUsImgs from '/images/aboutus.jpg'
 export default function AboutUs() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+   }, [])
    return (
       <>
          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:py-0 py-5">
