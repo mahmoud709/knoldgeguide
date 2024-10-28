@@ -8,9 +8,10 @@ export default function ContactBanner() {
             <p className="text-lg mb-6">
                تواصل معنا اليوم للحصول على استشارة مجانية ومعرفة كيف يمكننا مساعدتك في تحقيق أهدافك. فريقنا جاهز للإجابة على جميع استفساراتك.
             </p>
-            <Link to="https://wa.me/+" className="inline-block bg-white text-purple-600 font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-all">
+            <Link to="https://wa.me/+201006679604" target="_blank" className="inline-block bg-white text-purple-600 font-semibold py-3 px-6 rounded-md hover:bg-gray-100 transition-all">
                ابدأ التواصل الآن
             </Link>
+
          </div>
       </div>
    )
