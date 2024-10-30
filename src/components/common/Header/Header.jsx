@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import logo from"../../../Asset/Logo.png";
+import { Link, NavLink } from "react-router-dom";
+import logo from "/images/Logo.png";
 
 export default function Header() {
   const [toggle, settoggle] = useState(false);
@@ -10,9 +10,9 @@ export default function Header() {
   }
   return (
     <header className="bg-gray-50 flex justify-between items-center py-3 px-8 shadow-sm fixed top-0 left-0 right-0 md:h-[80px] h-[60px] z-50">
-      <div className="logo">
-      <img src={logo} alt="" className=""  style={{ width: "150px" }}/>
-      </div>
+      <Link to='/' className="logo">
+        <img src={logo} alt="logo" style={{ width: "150px" }} />
+      </Link>
       <ul className={`md:flex gap-5 items-center hidden `}>
         <li className="text-xl font-medium" >
           <NavLink to='/'>الرئيسية</NavLink>
