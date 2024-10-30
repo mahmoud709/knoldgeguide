@@ -4,13 +4,16 @@ import { useEffect, useState } from "react";
 
 export default function SingleService() {
    const { id } = useParams();
-   // const allServs = Services;
-   const [allServs, setallServs] = useState(Services);
+   const allServs = Services;
+   const [allServices, setallServs] = useState(allServs);
    const [singleServ, setsingleServ] = useState(null);
-   useEffect(() => {
-      const [singleService] = allServs.filter((el) => el.id == id);
+   function getSingleService() {
+      const [singleService] = allServices.filter((el) => el.id == id);
       setsingleServ(singleService);
-   }, [])
+   }
+   useEffect(() => {
+      getSingleService();
+   }, [id])
    return (
       <>{
          singleServ !== null && <div className="grid md:grid-cols-2 grid-cols-1 md:gap-12 gap-6 md:py-0 py-6">
