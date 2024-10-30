@@ -14,18 +14,18 @@ function App() {
       element: <MainLayouts />,
       children: [
         { path: '', element: <Hero /> },
-        { path: '/services', element: <Services /> },
-        { path: '/services/:id', element: <SingleService /> },
-        { path: '/about-us', element: <AboutUs /> },
-        { path: '/contact', element: <Contact /> },
+        { path: 'services', element: <Services /> },
+        { path: 'services/:id', element: <SingleService /> },
+        { path: 'about-us', element: <AboutUs /> },
+        { path: 'contact', element: <Contact /> },
       ]
     },
-
     {
       path: '*',
       element: <NotFound />
     }
   ]);
+
 
   return (
     <>
