@@ -21,7 +21,7 @@ export default function SingleService() {
                   {singleServ.info}
                </article>
                <div className="flex gap-x-2 items-center">
-                  <Link to='https://wa.me/+' terget="_blank">
+                  <Link to='https://wa.me/+201006679604' terget="_blank">
                      <button className="main-btn">طلب الخدمه</button>
                   </Link>
                   {/* <Link to='https://wa.me/+' terget="_blank">
