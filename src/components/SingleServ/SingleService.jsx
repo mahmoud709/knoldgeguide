@@ -13,7 +13,7 @@ export default function SingleService() {
    }
    useEffect(() => {
       getSingleService();
-   }, [id])
+   }, [])
    return (
       <>{
          singleServ !== null && <div className="grid md:grid-cols-2 grid-cols-1 md:gap-12 gap-6 md:py-0 py-6">
