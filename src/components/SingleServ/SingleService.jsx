@@ -25,15 +25,12 @@ export default function SingleService() {
                </article>
                <div className="flex gap-x-2 items-center">
                   <Link to='https://wa.me/+201006679604' terget="_blank">
-                     <button className="main-btn">طلب الخدمه</button>
+                     <button className="main-btn">طلب الخدمة</button>
                   </Link>
-                  {/* <Link to='https://wa.me/+' terget="_blank">
-                     <button className="main-btn">طلب الخدمه تلجرام</button>
-                  </Link> */}
                </div>
             </div>
             <div className="serv-img">
-               <img src={singleServ.image} className="rounded" alt={singleServ.title} loading="lazy" />
+               <img src={singleServ.image} className="rounded" alt={singleServ.title}/>
             </div>
          </div>
       }</>
